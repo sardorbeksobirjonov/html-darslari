@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Qo‘llanma</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+<h1 class="text-center text-3xl font-bold text-indigo-700 mb-10">🎨 CSS — Eng Kerakli Property’lar Qo‘llanmasi</h1>
+
+<!-- 1. MATN VA SHRIFT -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">1️⃣ Matn va Shrift</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+    
+    <!-- Chap div -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>color</b> — matn rangini belgilaydi.</p>
+      <p><b>font-size</b> — matn shrift o‘lchamini belgilaydi.</p>
+      <p><b>font-family</b> — shrift turini belgilaydi.</p>
+      <p><b>font-weight</b> — matn qalinligini belgilaydi.</p>
+      <p><b>text-align</b> — matn joylashuvini belgilaydi.</p>
+    </div>
+
+    <!-- O'ng div -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.text {
+  color: red;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+}
+      </pre>
+      <div class="mt-4 p-3 border rounded-lg text-center bg-white">
+        <p class="text" style="color:red; font-size:20px; font-family:Arial; font-weight:bold; text-align:center;">
+          Bu matn qizil, 20px, Arial shriftida va markazda.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 2. O‘LCHAM VA BO‘SHLIQ -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">2️⃣ O‘lcham va Bo‘shliq</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <!-- Chap -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>width</b> — kenglik.</p>
+      <p><b>height</b> — balandlik.</p>
+      <p><b>margin</b> — tashqi bo‘shliq.</p>
+      <p><b>padding</b> — ichki bo‘shliq.</p>
+    </div>
+
+    <!-- O‘ng -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.box {
+  width: 200px;
+  height: 120px;
+  margin: 20px;
+  padding: 15px;
+  background-color: lightblue;
+}
+      </pre>
+      <div class="mt-4 border rounded-lg bg-white flex justify-center">
+        <div style="width:200px; height:120px; margin:20px; padding:15px; background-color:lightblue;">
+          Kenglik: 200px, Balandlik: 120px
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 3. FON VA RANGLAR -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">3️⃣ Fon va Ranglar</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <!-- Chap -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>background-color</b> — fon rangini belgilaydi.</p>
+      <p><b>background-image</b> — fon rasmi qo‘yadi.</p>
+      <p><b>background-size</b> — fon o‘lchamini belgilaydi.</p>
+      <p><b>background-repeat</b> — fon takrorlanishini belgilaydi.</p>
+    </div>
+
+    <!-- O‘ng -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.bg-box {
+  background-color: yellow;
+  background-image: url('https://via.placeholder.com/100');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+      </pre>
+      <div class="mt-4 border rounded-lg bg-white flex justify-center">
+        <div style="width:200px; height:120px; background-color:yellow; background-image:url('https://via.placeholder.com/100'); background-size:cover; background-repeat:no-repeat;">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 4. CHEGARALAR -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">4️⃣ Chegaralar va Yumaloqlash</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <!-- Chap -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>border</b> — chegara.</p>
+      <p><b>border-radius</b> — yumaloqlash.</p>
+    </div>
+
+    <!-- O‘ng -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.rounded-box {
+  border: 3px solid black;
+  border-radius: 15px;
+}
+      </pre>
+      <div class="mt-4 border rounded-lg bg-white flex justify-center">
+        <div style="width:200px; height:120px; background-color:lightgreen; border:3px solid black; border-radius:15px;">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 5. EFFEKT -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">5️⃣ Effektlar</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <!-- Chap -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>box-shadow</b> — element soyasi.</p>
+      <p><b>opacity</b> — shaffoflik.</p>
+      <p><b>transition</b> — o‘tish effekti.</p>
+      <p><b>transform</b> — o‘lcham/aylantirish/siljitish.</p>
+    </div>
+
+    <!-- O‘ng -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.effect-box {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  opacity: 0.9;
+  transition: transform 0.3s;
+}
+.effect-box:hover {
+  transform: scale(1.1);
+}
+      </pre>
+      <div class="mt-4 border rounded-lg bg-white flex justify-center">
+        <div class="effect-box" style="width:200px; height:120px; background-color:pink; box-shadow:0 4px 10px rgba(0,0,0,0.3); opacity:0.9; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- 6. JOYLASHUV -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">6️⃣ Joylashuv (Layout)</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <!-- Chap -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>display</b> — element ko‘rinish turini belgilaydi (block, inline, flex, grid).</p>
+      <p><b>position</b> — joylashuv turini belgilaydi (static, relative, absolute, fixed, sticky).</p>
+      <p><b>top / right / bottom / left</b> — joylashuv koordinatalari.</p>
+      <p><b>z-index</b> — element ustma-ust tartibini belgilaydi.</p>
+    </div>
+
+    <!-- O‘ng -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.pos-box {
+  position: relative;
+  top: 10px;
+  left: 20px;
+  z-index: 2;
+}
+      </pre>
+      <div class="relative w-[220px] h-[140px] bg-gray-200 flex justify-center items-center">
+        <div style="position:relative; top:10px; left:20px; background:orange; padding:10px;">
+          Joylashuv: relative
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 7. FLEXBOX -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">7️⃣ Flexbox</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <!-- Chap -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>display: flex</b> — elementlarni moslashuvchan qator/sutunda joylashtiradi.</p>
+      <p><b>justify-content</b> — asosiy o‘qda tekislash.</p>
+      <p><b>align-items</b> — kesishgan o‘qda tekislash.</p>
+      <p><b>gap</b> — elementlar orasidagi bo‘shliq.</p>
+    </div>
+
+    <!-- O‘ng -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+      </pre>
+      <div style="display:flex; justify-content:center; align-items:center; gap:10px; background:#eee; padding:10px;">
+        <div style="background:lightcoral; padding:10px;">1</div>
+        <div style="background:lightgreen; padding:10px;">2</div>
+        <div style="background:lightblue; padding:10px;">3</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 8. GRID -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">8️⃣ CSS Grid</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <!-- Chap -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>display: grid</b> — elementlarni panjara tizimida joylashtiradi.</p>
+      <p><b>grid-template-columns</b> — ustunlar soni va o‘lchami.</p>
+      <p><b>gap</b> — kataklar orasidagi bo‘shliq.</p>
+      <p><b>place-items</b> — gorizontal va vertikal tekislash.</p>
+    </div>
+
+    <!-- O‘ng -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+      </pre>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
+        <div style="background:lightpink; padding:10px;">A</div>
+        <div style="background:lightyellow; padding:10px;">B</div>
+        <div style="background:lightcyan; padding:10px;">C</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 9. LIST VA JADVAL -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">9️⃣ List va Jadval</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <!-- Chap -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>list-style-type</b> — ro‘yxat belgisi turi.</p>
+      <p><b>border-collapse</b> — jadval chiziqlarini birlashtirish.</p>
+      <p><b>border-spacing</b> — jadval kataklari orasidagi bo‘shliq.</p>
+    </div>
+
+    <!-- O‘ng -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+ul {
+  list-style-type: square;
+}
+table {
+  border-collapse: collapse;
+}
+      </pre>
+      <ul style="list-style-type:square;">
+        <li>Bir</li>
+        <li>Ikki</li>
+        <li>Uch</li>
+      </ul>
+      <table border="1" style="border-collapse:collapse; margin-top:10px;">
+        <tr><th>A</th><th>B</th></tr>
+        <tr><td>1</td><td>2</td></tr>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- 10. OVERFLOW -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">🔟 Overflow va Scroll</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <!-- Chap -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>overflow</b> — ortiqcha kontent ko‘rinishini boshqaradi.</p>
+      <p><b>overflow-x / overflow-y</b> — faqat gorizontal yoki vertikal.</p>
+      <p><b>scroll-behavior</b> — skroll animatsiyasi.</p>
+    </div>
+
+    <!-- O‘ng -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.scroll-box {
+  width: 150px;
+  height: 80px;
+  overflow: auto;
+}
+      </pre>
+      <div style="width:150px; height:80px; overflow:auto; border:1px solid gray;">
+        Bu matn juda uzun bo‘lib, qutidan chiqib ketadi, shuning uchun scroll paydo bo‘ladi.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 11. CURSOR -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">1️⃣1️⃣ Cursor va Ko‘rsatkichlar</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <!-- Chap -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>cursor</b> — sichqoncha ko‘rsatkich turi.</p>
+      <p><b>pointer-events</b> — element bosilishini boshqaradi.</p>
+      <p><b>user-select</b> — matnni tanlash imkonini boshqaradi.</p>
+    </div>
+
+    <!-- O‘ng -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.cursor-box {
+  cursor: pointer;
+  user-select: none;
+}
+      </pre>
+      <div style="cursor:pointer; user-select:none; padding:10px; background:lightgray;">
+        Menga bos, lekin matnni tanlab bo‘lmaydi.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 12. ANIMATSIYA -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">1️⃣2️⃣ Animatsiya</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <!-- Chap -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-4">
+      <p><b>@keyframes</b> — animatsiya bosqichlarini belgilaydi.</p>
+      <p><b>animation-name</b> — animatsiya nomi.</p>
+      <p><b>animation-duration</b> — davomiyligi.</p>
+      <p><b>animation-iteration-count</b> — necha marta takrorlanishi.</p>
+    </div>
+
+    <!-- O‘ng -->
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+@keyframes move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50px); }
+}
+.anim-box {
+  animation: move 1s infinite alternate;
+}
+      </pre>
+      <div style="width:50px; height:50px; background:red; animation:move 1s infinite alternate;">
+      </div>
+      <style>
+        @keyframes move {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(50px); }
+        }
+      </style>
+    </div>
+
+  </div>
+</section>
+
+<!-- 13. TRANSFORM -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">13️⃣ Transform — Aylantirish, Kattalashtirish, Siljitish</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-3">
+      <p><b>transform</b> — element ko‘rinishini o‘zgartiradi.</p>
+      <p><b>rotate()</b> — aylantirish.</p>
+      <p><b>scale()</b> — kattalashtirish yoki kichiklashtirish.</p>
+      <p><b>translate()</b> — joyini siljitish.</p>
+      <p><b>skew()</b> — qiya qilish.</p>
+    </div>
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.transform-box {
+  transform: rotate(10deg) scale(1.1) translate(10px, 5px);
+}
+      </pre>
+      <div class="mt-4 border rounded-lg bg-white flex justify-center">
+        <div style="width:200px; height:120px; background-color:lightcoral; transform:rotate(10deg) scale(1.1) translate(10px, 5px);">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 14. TRANSITION -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">14️⃣ Transition — O‘zgarishni Yumshoq Qilish</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-3">
+      <p><b>transition-property</b> — qaysi property o‘zgaradi.</p>
+      <p><b>transition-duration</b> — qancha vaqt davom etadi.</p>
+      <p><b>transition-timing-function</b> — o‘zgarish tezligi.</p>
+    </div>
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.transition-box {
+  background-color: orange;
+  transition: background-color 0.5s, transform 0.5s;
+}
+.transition-box:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+      </pre>
+      <div class="mt-4 border rounded-lg bg-white flex justify-center">
+        <div style="width:200px; height:120px; background-color:orange; transition:background-color 0.5s, transform 0.5s;"
+             onmouseover="this.style.backgroundColor='red'; this.style.transform='scale(1.1)';"
+             onmouseout="this.style.backgroundColor='orange'; this.style.transform='scale(1)';">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 15. SHADOW -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">15️⃣ Shadow Effektlar</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-3">
+      <p><b>box-shadow</b> — elementga soya beradi.</p>
+      <p><b>text-shadow</b> — matnga soya beradi.</p>
+    </div>
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.shadow-box {
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+.shadow-text {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+      </pre>
+      <div class="mt-4 space-y-4">
+        <div style="width:200px; height:100px; background-color:lightblue; box-shadow:4px 4px 10px rgba(0,0,0,0.3);"></div>
+        <p style="font-size:20px; text-shadow:2px 2px 5px rgba(0,0,0,0.5);">Soyali matn</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 16. BACKGROUND ADVANCED -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">16️⃣ Fon Kengaytirilgan Usullar</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-3">
+      <p><b>background-size</b> — fon rasmi o‘lchami.</p>
+      <p><b>background-position</b> — fon rasmi joylashuvi.</p>
+      <p><b>linear-gradient</b> — ranglar o‘tishi.</p>
+    </div>
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.bg-advanced {
+  background-image: linear-gradient(to right, red, yellow);
+}
+      </pre>
+      <div class="mt-4" style="width:200px; height:120px; background-image:linear-gradient(to right, red, yellow);"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 17. FILTER -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">17️⃣ Filter — Tasvir va Elementlarni O‘zgartirish</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-3">
+      <p><b>blur()</b> — xiralashtirish.</p>
+      <p><b>brightness()</b> — yorqinlik.</p>
+      <p><b>contrast()</b> — kontrast.</p>
+      <p><b>grayscale()</b> — qora-oq effekt.</p>
+      <p><b>sepia()</b> — sariq effekt.</p>
+    </div>
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.filter-box {
+  filter: grayscale(100%);
+}
+      </pre>
+      <img src="https://via.placeholder.com/200" style="filter:grayscale(100%);">
+    </div>
+
+  </div>
+</section>
+
+<!-- 18. RESPONSIVE DESIGN -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">18️⃣ Responsive Dizayn</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-3">
+      <p><b>@media</b> — ekran o‘lchamiga qarab style yozish.</p>
+      <p><b>min-width</b> — minimal kenglik sharti.</p>
+      <p><b>max-width</b> — maksimal kenglik sharti.</p>
+    </div>
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightgreen;
+  }
+}
+      </pre>
+      <div style="width:200px; height:120px; background-color:lightblue;">Kichik ekranda yashil bo‘ladi</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 19. PSEUDO -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">19️⃣ Pseudo-class va Pseudo-element</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-3">
+      <p><b>:hover</b> — sichqoncha ustiga kelganda.</p>
+      <p><b>:active</b> — bosilganda.</p>
+      <p><b>::before</b> — elementdan oldin qo‘shimcha.</p>
+      <p><b>::after</b> — elementdan keyin qo‘shimcha.</p>
+    </div>
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+.button:hover {
+  background-color: orange;
+}
+      </pre>
+      <button style="padding:10px 20px; background-color:lightblue;">Hover qiling</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- 20. CSS VARIABLES -->
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-indigo-700 mb-6">20️⃣ CSS Variables — O‘zgaruvchilar</h2>
+  <div class="flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-indigo-500 rounded-2xl shadow-lg p-6 space-y-3">
+      <p><b>--my-color</b> — o‘zgaruvchi nomi.</p>
+      <p><b>var(--my-color)</b> — o‘zgaruvchini chaqirish.</p>
+    </div>
+
+    <div class="w-full lg:w-[400px] bg-white border-4 border-green-500 rounded-2xl shadow-lg p-6">
+      <pre class="bg-gray-50 p-3 rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+:root {
+  --main-bg: pink;
+}
+.variable-box {
+  background-color: var(--main-bg);
+}
+      </pre>
+      <div style="width:200px; height:120px; background-color:pink;"></div>
+    </div>
+
+  </div>
+  <!-- <a style="background-color: blue; color: white; padding: 10px; border-radius: 20px; text-align: center;" href="js.html">Javascript</a> -->
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Darslari</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Sarlavha -->
+  <h1 class="text-center font-serif text-[32px] m-6 text-blue-700 font-bold">📚 HTML Darslari</h1>
+
+  <!-- Yuqori 2 ta kartochka -->
+  <div class="flex flex-wrap justify-center gap-8 px-4">
+    
+    <!-- 1-chi kartochka -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4">
+      <h1 class="mb-3 font-bold text-[22px] text-gray-800">HTML nima?</h1>
+      <p class="text-[16px] leading-relaxed text-gray-700">
+        <strong>HTML</strong> — <em>HyperText Markup Language</em> degani bo‘lib, bu <b>veb-sahifalarni tuzish tili</b>.
+      </p>
+      <p class="mt-3 text-[16px] text-gray-700">
+        📌 <b>Nima uchun ishlatiladi?</b><br>
+        • Saytning <u>tuzilmasini yaratish</u> (matn, rasm, video, tugma joylash).<br>
+        • Brauzerga <u>nimani va qayerda ko‘rsatish</u> kerakligini aytadi.
+      </p>
+      <p class="mt-3 text-[16px] text-gray-700">
+        💡 Oddiy qilib aytganda:<br>
+        HTML – saytning <b>skeleti</b> 🦴,<br>
+        CSS – uning <b>ko‘rinishi</b> 🎨,<br>
+        JavaScript esa <b>harakati</b> ⚙️.
+      </p>
+    </div>
+
+    <!-- 2-chi kartochka -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 flex flex-col justify-between">
+      <div>
+        <h2 class="font-serif m-2">&lt;!DOCTYPE html&gt; — hujjat turini bildiradi (HTML5).</h2>
+        <h2 class="font-serif m-2">&lt;html&gt; — butun HTML hujjatni o‘rash uchun.</h2>
+        <h2 class="font-serif m-2">&lt;head&gt; — sahifa haqida ma’lumot (title, meta, style).</h2>
+        <h2 class="font-serif m-2">&lt;title&gt; — brauzer oynasida ko‘rinadigan nom.</h2>
+        <h2 class="font-serif m-2">&lt;body&gt; — foydalanuvchiga ko‘rinadigan barcha kontent shu yerda.</h2>
+      </div>
+
+      <div class="mt-6 p-3 bg-gray-50 border rounded-lg text-sm font-mono text-gray-800">
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Sahifa nomi&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Kontent shu yerda
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Yangi Section -->
+  <section class="mt-10 px-4">
+    <h2 class="text-center text-[28px] font-bold text-green-700 mb-6">📌 HTML Teglar Misoli va Vazifasi</h2>
+    <div class="flex flex-wrap justify-center gap-8">
+
+      <!-- Chap tomonda misollar -->
+      <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-4">
+        <h1 class="text-red-600">Bu H1 sarlavha</h1>
+        <h2 class="text-orange-600">Bu H2 sarlavha</h2>
+        <h3 class="text-yellow-600">Bu H3 sarlavha</h3>
+        <h4 class="text-green-600">Bu H4 sarlavha</h4>
+        <h5 class="text-blue-600">Bu H5 sarlavha</h5>
+        <h6 class="text-purple-600">Bu H6 sarlavha</h6>
+
+        <img src="https://via.placeholder.com/300x150" alt="Namuna rasm" class="rounded-lg border">
+
+        <audio controls class="w-full">
+          <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+          Brauzeringiz audio qo‘llab-quvvatlamaydi.
+        </audio>
+
+        <video controls class="w-full rounded-lg">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Brauzeringiz video qo‘llab-quvvatlamaydi.
+        </video>
+
+        <a href="https://google.com" target="_blank" class="text-blue-500 underline">Google'ga o'tish</a>
+      </div>
+
+      <!-- O'ng tomonda tushuntirish + kod -->
+      <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-4">
+        <p><b>&lt;h1&gt;–&lt;h6&gt;</b> — sarlavhalar. H1 eng katta, H6 eng kichigi.</p>
+        <p><b>&lt;img&gt;</b> — rasm joylash uchun ishlatiladi.</p>
+        <p><b>&lt;audio&gt;</b> — audio fayl qo‘shish uchun.</p>
+        <p><b>&lt;video&gt;</b> — video qo‘shish uchun.</p>
+        <p><b>&lt;a&gt;</b> — havola (link) yaratish uchun.</p>
+
+        <!-- HTML kodlari -->
+        <div class="mt-4 p-3 bg-gray-50 border rounded-lg text-sm font-mono text-gray-800">
+<pre>
+&lt;h1&gt;Bu H1 sarlavha&lt;/h1&gt;
+&lt;h2&gt;Bu H2 sarlavha&lt;/h2&gt;
+&lt;h3&gt;Bu H3 sarlavha&lt;/h3&gt;
+&lt;h4&gt;Bu H4 sarlavha&lt;/h4&gt;
+&lt;h5&gt;Bu H5 sarlavha&lt;/h5&gt;
+&lt;h6&gt;Bu H6 sarlavha&lt;/h6&gt;
+
+&lt;img src="rasm.jpg" alt="Namuna rasm"&gt;
+
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+&lt;a href="https://google.com"&gt;Google'ga o'tish&lt;/a&gt;
+</pre>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="mt-10 px-4">
+  <h2 class="text-center text-[28px] font-bold text-purple-700 mb-6">
+    📌 HTML Qo‘shimcha Teglar Misollari va Vazifalari
+  </h2>
+  <div class="flex flex-wrap justify-center gap-8">
+
+    <!-- Chap tomonda misollar -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-4">
+      <p>Oddiy matn <span class="text-red-600 font-bold">span ichida</span> bo‘lishi mumkin.</p>
+
+      <p>Bu matn birinchi qator.<br>Bu esa yangi qator (br ishladi).</p>
+
+      <p>Matn ustiga chiziq:<hr></p>
+
+      <p>Matn kvadrat darajada: 4<sup>2</sup> = 16</p>
+      <p>Matn past indeksda: H<sub>2</sub>O</p>
+
+      <marquee behavior="scroll" direction="left" class="text-blue-600">
+        Bu marquee — harakatlanuvchi matn
+      </marquee>
+
+      <p>Bu oddiy paragraf (p).</p>
+
+      <pre>
+Bu matn oldingi joylashishini saqlab qoladi.
+Yangi qatorlar ham shu ko‘rinishda qoladi.
+      </pre>
+
+      <p>Bu <mark>belgilangan matn</mark> misoli.</p>
+      <p>Bu <del>o‘chirilgan matn</del> misoli.</p>
+      <p>Bu <ins>qo‘shilgan matn</ins> misoli.</p>
+      <p>Bu <i>kursiv matn</i> misoli.</p>
+    </div>
+
+    <!-- O'ng tomonda tushuntirish + kod -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-4">
+      <p><b>&lt;span&gt;</b> — matnning bir qismini ajratib, stil berish uchun.</p>
+      <p><b>&lt;br&gt;</b> — yangi qatordan boshlash.</p>
+      <p><b>&lt;hr&gt;</b> — gorizontal chiziq.</p>
+      <p><b>&lt;sup&gt;</b> — matnni yuqoriga (superscript).</p>
+      <p><b>&lt;sub&gt;</b> — matnni pastga (subscript).</p>
+      <p><b>&lt;marquee&gt;</b> — matnni harakatlantirish (eskirgan teg).</p>
+      <p><b>&lt;p&gt;</b> — paragraf matn.</p>
+      <p><b>&lt;pre&gt;</b> — bo‘sh joy va qatorni saqlash.</p>
+      <p><b>&lt;mark&gt;</b> — matnni belgilang.</p>
+      <p><b>&lt;del&gt;</b> — o‘chirilgan matn ko‘rsatish.</p>
+      <p><b>&lt;ins&gt;</b> — yangi matn qo‘shilganini ko‘rsatish.</p>
+      <p><b>&lt;i&gt;</b> — kursiv matn.</p>
+
+      <div class="mt-4 p-3 bg-gray-50 border rounded-lg text-sm font-mono text-gray-800">
+<pre>
+&lt;span&gt;Rangli matn&lt;/span&gt;
+&lt;br&gt; Yangi qator
+&lt;hr&gt; Chiziq
+4&lt;sup&gt;2&lt;/sup&gt;
+H&lt;sub&gt;2&lt;/sub&gt;O
+&lt;marquee&gt;Harakatlanuvchi matn&lt;/marquee&gt;
+&lt;p&gt;Paragraf&lt;/p&gt;
+&lt;pre&gt;Saqlangan bo'sh joy&lt;/pre&gt;
+&lt;mark&gt;Belgilang&lt;/mark&gt;
+&lt;del&gt;O'chirilgan&lt;/del&gt;
+&lt;ins&gt;Qo'shilgan&lt;/ins&gt;
+&lt;i&gt;Kursiv&lt;/i&gt;
+</pre>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <section class="mt-10 px-4">
+  <h2 class="text-center text-[28px] font-bold text-green-700 mb-6">
+    📌 HTML — Div, Table, Button, Input, Em Teglari
+  </h2>
+  <div class="flex flex-wrap justify-center gap-8">
+
+    <!-- Chap tomonda misollar -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-6">
+
+      <!-- DIV -->
+      <div class="bg-gray-100 p-3 border rounded-lg">
+        Bu oddiy <b>div</b> bloki.
+      </div>
+
+      <!-- TABLE -->
+      <table class="border-collapse border border-gray-500 w-full text-center">
+        <tr>
+          <th class="border border-gray-500 p-2 bg-gray-200">Ism</th>
+          <th class="border border-gray-500 p-2 bg-gray-200">Yosh</th>
+        </tr>
+        <tr>
+          <td class="border border-gray-500 p-2">Ali</td>
+          <td class="border border-gray-500 p-2">20</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-500 p-2">Sardor</td>
+          <td class="border border-gray-500 p-2">22</td>
+        </tr>
+      </table>
+
+      <!-- BUTTON -->
+      <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+        Bosish
+      </button>
+
+      <!-- INPUT -->
+      <input type="text" placeholder="Ismingizni kiriting" class="border px-2 py-1 rounded w-full">
+
+      <!-- EM -->
+      <p>Bu <em>kursiv urg‘u berilgan</em> matn misoli.</p>
+
+    </div>
+
+    <!-- O'ng tomonda tushuntirish + kod -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-4">
+      <p><b>&lt;div&gt;</b> — blok element yaratish.</p>
+      <p><b>&lt;table&gt;</b> — jadval yaratish.</p>
+      <p><b>&lt;th&gt;</b> — jadval ustun sarlavhasi.</p>
+      <p><b>&lt;td&gt;</b> — jadvaldagi oddiy hujayra.</p>
+      <p><b>&lt;button&gt;</b> — bosiladigan tugma.</p>
+      <p><b>&lt;input&gt;</b> — ma’lumot kiritish maydoni.</p>
+      <p><b>&lt;em&gt;</b> — urg‘u berilgan kursiv matn.</p>
+
+      <div class="mt-4 p-3 bg-gray-50 border rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+<pre>
+&lt;div&gt;Bu div bloki&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Ism&lt;/th&gt;
+    &lt;th&gt;Yosh&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ali&lt;/td&gt;
+    &lt;td&gt;20&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;button&gt;Bosish&lt;/button&gt;
+
+&lt;input type="text" placeholder="Ism kiriting"&gt;
+
+&lt;p&gt;Bu &lt;em&gt;kursiv&lt;/em&gt; matn&lt;/p&gt;
+</pre>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="mt-10 px-4">
+  <h2 class="text-center text-[28px] font-bold text-indigo-700 mb-6">
+    📌 HTML Forma Teglari — Misollar va Vazifalar
+  </h2>
+  <div class="flex flex-wrap justify-center gap-8">
+
+    <!-- Chap tomonda misollar -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-6">
+
+      <!-- FORM -->
+      <form class="space-y-4">
+        <!-- LABEL + INPUT -->
+        <div>
+          <label for="ism" class="block font-medium mb-1">Ismingiz:</label>
+          <input id="ism" type="text" placeholder="Ism kiriting" class="border px-3 py-2 rounded w-full">
+        </div>
+
+        <!-- TEXTAREA -->
+        <div>
+          <label for="xabar" class="block font-medium mb-1">Xabaringiz:</label>
+          <textarea id="xabar" rows="3" placeholder="Xabar kiriting" class="border px-3 py-2 rounded w-full"></textarea>
+        </div>
+
+        <!-- SELECT + OPTION -->
+        <div>
+          <label for="til" class="block font-medium mb-1">Til tanlang:</label>
+          <select id="til" class="border px-3 py-2 rounded w-full">
+            <option>O‘zbekcha</option>
+            <option>Ruscha</option>
+            <option>Inglizcha</option>
+          </select>
+        </div>
+
+        <!-- FIELDSET + LEGEND -->
+        <fieldset class="border p-3 rounded">
+          <legend class="px-2 font-medium">Jinsingiz:</legend>
+          <label class="block">
+            <input type="radio" name="jins" value="erkak"> Erkak
+          </label>
+          <label class="block">
+            <input type="radio" name="jins" value="ayol"> Ayol
+          </label>
+        </fieldset>
+
+        <!-- BUTTON -->
+        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">
+          Yuborish
+        </button>
+      </form>
+
+    </div>
+
+    <!-- O'ng tomonda tushuntirish + kod -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-3">
+      <p><b>&lt;form&gt;</b> — forma yaratish konteyneri.</p>
+      <p><b>&lt;input&gt;</b> — ma’lumot kiritish maydoni.</p>
+      <p><b>&lt;textarea&gt;</b> — ko‘p qatorli matn kiritish joyi.</p>
+      <p><b>&lt;select&gt;</b> va <b>&lt;option&gt;</b> — tanlov menyusi.</p>
+      <p><b>&lt;button&gt;</b> — tugma.</p>
+      <p><b>&lt;label&gt;</b> — input maydoniga nom berish.</p>
+      <p><b>&lt;fieldset&gt;</b> va <b>&lt;legend&gt;</b> — forma elementlarini guruhlash.</p>
+
+      <div class="mt-4 p-3 bg-gray-50 border rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+<pre>
+&lt;form&gt;
+  &lt;label for="ism"&gt;Ismingiz:&lt;/label&gt;
+  &lt;input id="ism" type="text"&gt;
+
+  &lt;label for="xabar"&gt;Xabar:&lt;/label&gt;
+  &lt;textarea id="xabar"&gt;&lt;/textarea&gt;
+
+  &lt;label for="til"&gt;Til tanlang:&lt;/label&gt;
+  &lt;select id="til"&gt;
+    &lt;option&gt;O‘zbekcha&lt;/option&gt;
+    &lt;option&gt;Ruscha&lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;fieldset&gt;
+    &lt;legend&gt;Jinsingiz:&lt;/legend&gt;
+    &lt;input type="radio" name="jins"&gt; Erkak
+  &lt;/fieldset&gt;
+
+  &lt;button&gt;Yuborish&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="mt-10 px-4">
+  <h2 class="text-center text-[28px] font-bold text-indigo-700 mb-6">
+    📌 HTML Forma Teglari — Misollar va Vazifalar
+  </h2>
+  <div class="flex flex-wrap justify-center gap-8">
+
+    <!-- Chap tomonda misollar -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-6">
+
+      <!-- FORM -->
+      <form action="#" method="post" class="space-y-4">
+        
+        <!-- LABEL + INPUT -->
+        <div>
+          <label for="ism" class="block font-medium mb-1">Ismingiz:</label>
+          <input id="ism" type="text" placeholder="Ism kiriting" class="border px-3 py-2 rounded w-full">
+        </div>
+
+        <!-- TEXTAREA -->
+        <div>
+          <label for="xabar" class="block font-medium mb-1">Xabaringiz:</label>
+          <textarea id="xabar" rows="3" placeholder="Xabar kiriting" class="border px-3 py-2 rounded w-full"></textarea>
+        </div>
+
+        <!-- SELECT + OPTION -->
+        <div>
+          <label for="til" class="block font-medium mb-1">Til tanlang:</label>
+          <select id="til" class="border px-3 py-2 rounded w-full">
+            <option>O‘zbekcha</option>
+            <option>Ruscha</option>
+            <option>Inglizcha</option>
+          </select>
+        </div>
+
+        <!-- FIELDSET + LEGEND -->
+        <fieldset class="border p-3 rounded">
+          <legend class="px-2 font-medium">Jinsingiz:</legend>
+          <label class="block">
+            <input type="radio" name="jins" value="erkak"> Erkak
+          </label>
+          <label class="block">
+            <input type="radio" name="jins" value="ayol"> Ayol
+          </label>
+        </fieldset>
+
+        <!-- BUTTON -->
+        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">
+          Yuborish
+        </button>
+        <button type="reset" class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded">
+          Tozalash
+        </button>
+      </form>
+
+    </div>
+
+    <!-- O'ng tomonda tushuntirish + kod -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-3">
+      <p><b>&lt;form&gt;</b> — foydalanuvchi ma’lumotlarini to‘plash va serverga yuborish uchun.</p>
+      <p><b>&lt;input&gt;</b> — bir qatorlik ma’lumot kiritish maydoni.</p>
+      <p><b>&lt;textarea&gt;</b> — ko‘p qatorli matn kiritish maydoni.</p>
+      <p><b>&lt;select&gt;</b> va <b>&lt;option&gt;</b> — ro‘yxatdan tanlov qilish uchun.</p>
+      <p><b>&lt;label&gt;</b> — input maydoniga nom biriktirish.</p>
+      <p><b>&lt;fieldset&gt;</b> va <b>&lt;legend&gt;</b> — forma elementlarini guruhlash va nomlash.</p>
+      <p><b>&lt;button&gt;</b> — forma yuborish yoki boshqa amallar uchun tugma.</p>
+
+      <div class="mt-4 p-3 bg-gray-50 border rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+<pre>
+&lt;form action="#" method="post"&gt;
+  &lt;label for="ism"&gt;Ismingiz:&lt;/label&gt;
+  &lt;input id="ism" type="text"&gt;
+
+  &lt;label for="xabar"&gt;Xabaringiz:&lt;/label&gt;
+  &lt;textarea id="xabar"&gt;&lt;/textarea&gt;
+
+  &lt;label for="til"&gt;Til tanlang:&lt;/label&gt;
+  &lt;select id="til"&gt;
+    &lt;option&gt;O‘zbekcha&lt;/option&gt;
+    &lt;option&gt;Ruscha&lt;/option&gt;
+    &lt;option&gt;Inglizcha&lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;fieldset&gt;
+    &lt;legend&gt;Jinsingiz:&lt;/legend&gt;
+    &lt;input type="radio" name="jins"&gt; Erkak
+    &lt;input type="radio" name="jins"&gt; Ayol
+  &lt;/fieldset&gt;
+
+  &lt;button type="submit"&gt;Yuborish&lt;/button&gt;
+  &lt;button type="reset"&gt;Tozalash&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="mt-10 px-4">
+  <h2 class="text-center text-[28px] font-bold text-indigo-700 mb-6">
+    📌 HTML — Matn Formatlash Teglari
+  </h2>
+  <div class="flex flex-wrap justify-center gap-8">
+
+    <!-- Chap tomonda misollar -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-4">
+      <p><strong>Bu matn qalin yozilgan</strong> va odatda muhim so‘zlar uchun ishlatiladi.</p>
+      <p><em>Bu matn kursiv (urg‘u berilgan)</em> va ma’no jihatdan ta’kidlangan bo‘ladi.</p>
+      <p>
+        <blockquote>
+          Bu esa uzunroq sitata. Odatiy matndan alohida ajratib ko‘rsatiladi.
+        </blockquote>
+      </p>
+      <p><q>Bu esa qisqa sitata.</q></p>
+      <p>Men <abbr title="HyperText Markup Language">HTML</abbr> tilida kod yozaman.</p>
+      <p><code>console.log("Salom, Dunyo!");</code> — bu dastur kodi misoli.</p>
+      <p>Kopiya qilish uchun <kbd>Ctrl</kbd> + <kbd>C</kbd> tugmalarini bosing.</p>
+    </div>
+
+    <!-- O'ng tomonda tushuntirish -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-3">
+      <p><b>&lt;strong&gt;</b> — matnni qalin qilib, uning muhimligini bildiradi.</p>
+      <p><b>&lt;em&gt;</b> — matnni kursiv qilib, urg‘u beradi.</p>
+      <p><b>&lt;blockquote&gt;</b> — uzunroq sitata kiritish uchun.</p>
+      <p><b>&lt;q&gt;</b> — qisqa sitata (qo‘shtirnoq ichida chiqadi).</p>
+      <p><b>&lt;abbr&gt;</b> — qisqartma va uning to‘liq ma’nosini ko‘rsatish uchun.</p>
+      <p><b>&lt;code&gt;</b> — dastur kodi yoki buyruqlarni ko‘rsatish uchun.</p>
+      <p><b>&lt;kbd&gt;</b> — klaviatura tugmalarini ifodalash uchun.</p>
+
+      <!-- Kichik kod namunasi -->
+      <div class="mt-4 p-3 bg-gray-50 border rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+<pre>
+&lt;strong&gt;Qalin matn&lt;/strong&gt;
+&lt;em&gt;Kursiv matn&lt;/em&gt;
+&lt;blockquote&gt;Uzun sitata&lt;/blockquote&gt;
+&lt;q&gt;Qisqa sitata&lt;/q&gt;
+&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+&lt;code&gt;print("Hello")&lt;/code&gt;
+&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;
+</pre>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <section class="mt-10 px-4">
+  <h2 class="text-center text-[28px] font-bold text-indigo-700 mb-6">
+    📌 HTML — &lt;nav&gt; Tegidan Foydalanish
+  </h2>
+  <div class="flex flex-wrap justify-center gap-8">
+
+    <!-- Chap tomonda tushuntirish -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-3">
+      <p><b>&lt;nav&gt;</b> — sahifa yoki sayt ichida navigatsiya (menyu) yaratish uchun ishlatiladi.</p>
+      <p><b>&lt;ul&gt;</b> — tartibsiz ro‘yxat (bullets bilan).</p>
+      <p><b>&lt;li&gt;</b> — ro‘yxatning bitta elementi.</p>
+      <p><b>&lt;a&gt;</b> — havola (link) yaratadi, <code>href</code> atributi orqali qayerga o‘tishini ko‘rsatadi.</p>
+      <p>Odatda, <b>&lt;nav&gt;</b> ichida <b>&lt;ul&gt;</b>, <b>&lt;li&gt;</b> va <b>&lt;a&gt;</b> birgalikda ishlatiladi.</p>
+    </div>
+
+    <!-- O'ng tomonda nav ko‘rinishi + kod -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-4">
+      <!-- Nav menyu -->
+      <nav class="bg-indigo-600 rounded-lg p-3">
+        <ul class="flex gap-4 text-white">
+          <li><a href="#" class="hover:underline">Bosh sahifa</a></li>
+          <li><a href="#" class="hover:underline">Biz haqimizda</a></li>
+          <li><a href="#" class="hover:underline">Xizmatlar</a></li>
+          <li><a href="#" class="hover:underline">Aloqa</a></li>
+        </ul>
+      </nav>
+
+      <!-- Kod namuna -->
+      <div class="p-3 bg-gray-50 border rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+<pre>
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Bosh sahifa&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Biz haqimizda&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Xizmatlar&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Aloqa&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section class="mt-10 px-4">
+  <h2 class="text-center text-[28px] font-bold text-indigo-700 mb-6">
+    📌 HTML — Ro‘yxat Teglari (&lt;ul&gt;, &lt;li&gt;, &lt;ol&gt;)
+  </h2>
+  <div class="flex flex-wrap justify-center gap-8">
+
+    <!-- Chap tomonda tushuntirish -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-3">
+      <p><b>&lt;ul&gt;</b> — <u>Tartibsiz ro‘yxat</u> yaratadi (belgilari nuqta yoki boshqa markerlar bo‘lishi mumkin).</p>
+      <p><b>&lt;li&gt;</b> — Ro‘yxatning har bir elementi (list item).</p>
+      <p><b>&lt;ol&gt;</b> — <u>Tartibli ro‘yxat</u> yaratadi (raqamlar bilan).</p>
+      <p>📌 Eslatma: <b>&lt;li&gt;</b> har doim <b>&lt;ul&gt;</b> yoki <b>&lt;ol&gt;</b> ichida ishlatiladi.</p>
+    </div>
+
+    <!-- O'ng tomonda misol + kod -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-4">
+      <!-- Tartibsiz ro‘yxat -->
+      <h3 class="font-bold text-lg text-indigo-700">Tartibsiz Ro‘yxat (ul)</h3>
+      <ul class="list-disc list-inside">
+        <li>Olma</li>
+        <li>Banan</li>
+        <li>Uzum</li>
+      </ul>
+
+      <!-- Tartibli ro‘yxat -->
+      <h3 class="font-bold text-lg text-green-700 mt-4">Tartibli Ro‘yxat (ol)</h3>
+      <ol class="list-decimal list-inside">
+        <li>HTML o‘rganish</li>
+        <li>CSS o‘rganish</li>
+        <li>JavaScript o‘rganish</li>
+      </ol>
+
+      <!-- Kod namuna -->
+      <div class="p-3 bg-gray-50 border rounded-lg text-sm font-mono text-gray-800 overflow-x-auto mt-4">
+<pre>
+&lt;!-- Tartibsiz ro‘yxat --&gt;
+&lt;ul&gt;
+  &lt;li&gt;Olma&lt;/li&gt;
+  &lt;li&gt;Banan&lt;/li&gt;
+  &lt;li&gt;Uzum&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Tartibli ro‘yxat --&gt;
+&lt;ol&gt;
+  &lt;li&gt;HTML o‘rganish&lt;/li&gt;
+  &lt;li&gt;CSS o‘rganish&lt;/li&gt;
+  &lt;li&gt;JavaScript o‘rganish&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="mt-10 px-4">
+  <h2 class="text-center text-[28px] font-bold text-indigo-700 mb-6">
+    📱 HTML & CSS — Responsiv Dizayn Asoslari
+  </h2>
+  <div class="flex flex-wrap justify-center gap-8">
+
+    <!-- Chap tomonda tushuntirish -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-3">
+      <p><b>1️⃣ &lt;meta name="viewport"&gt;</b> — brauzerga sahifani qurilma o‘lchamiga moslashtirishni aytadi.</p>
+      <p><b>2️⃣ Moslashuvchan o‘lchamlar</b> — px o‘rniga %, em, rem, vw, vh ishlatish.</p>
+      <p><b>3️⃣ @media queries</b> — ekran o‘lchamiga qarab alohida CSS yozish.</p>
+      <p>Bu usul bilan sayt telefon, planshet va kompyuterda yaxshi ko‘rinadi.</p>
+    </div>
+
+    <!-- O'ng tomonda kod -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-4">
+      <div class="p-3 bg-gray-50 border rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+<pre>
+&lt;!-- 1. Viewport meta --&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+&lt;style&gt;
+/* 2. Moslashuvchan o‘lcham */
+img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* 3. Media queries */
+@media (max-width: 600px) {
+  body { background: lightyellow; }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  body { background: lightblue; }
+}
+
+@media (min-width: 1025px) {
+  body { background: white; }
+}
+&lt;/style&gt;
+</pre>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section class="mt-10 px-4">
+  <h2 class="text-center text-[28px] font-bold text-indigo-700 mb-6">
+    📄 HTML — Hujjat Tuzilmasidagi Qolgan Asosiy Teglar
+  </h2>
+  <div class="flex flex-wrap justify-center gap-8">
+
+    <!-- Chap tomonda tushuntirish -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-3">
+      <p><b>&lt;header&gt;</b> — sahifa yoki bo‘limning yuqori qismi, odatda logo va navigatsiya bo‘ladi.</p>
+      <p><b>&lt;main&gt;</b> — sahifadagi asosiy kontentni o‘rash uchun.</p>
+      <p><b>&lt;section&gt;</b> — mantiqiy bo‘limlarni ajratish.</p>
+      <p><b>&lt;article&gt;</b> — mustaqil kontent (yangilik, blog post).</p>
+      <p><b>&lt;aside&gt;</b> — asosiy kontentdan tashqari qo‘shimcha ma’lumotlar (sidebar).</p>
+      <p><b>&lt;footer&gt;</b> — sahifaning pastki qismi (muallif, kontakt, huquqlar).</p>
+    </div>
+
+    <!-- O'ng tomonda kod -->
+    <div class="border-4 rounded-xl border-black w-[400px] bg-white shadow-lg p-4 space-y-4">
+      <div class="p-3 bg-gray-50 border rounded-lg text-sm font-mono text-gray-800 overflow-x-auto">
+<pre>
+&lt;header&gt;
+  &lt;h1&gt;Mening Saytim&lt;/h1&gt;
+  &lt;nav&gt;...&lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;section&gt;
+    &lt;h2&gt;Yangiliklar&lt;/h2&gt;
+    &lt;article&gt;
+      &lt;h3&gt;Maqola nomi&lt;/h3&gt;
+      &lt;p&gt;Maqola matni...&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+
+  &lt;aside&gt;
+    &lt;h3&gt;E'lonlar&lt;/h3&gt;
+    &lt;p&gt;Qo‘shimcha ma’lumot...&lt;/p&gt;
+  &lt;/aside&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &amp;copy; 2025 Mening Saytim
+&lt;/footer&gt;
+</pre>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<a style="color: antiquewhite; font-size: 20px; background-color: blue; padding: 10px; border-radius: 20px; margin: 20px;" href="scc.html">Scc ga otish</a>
+
+</body>
+</html>

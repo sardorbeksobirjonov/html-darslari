@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript tushuntirish</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white p-6">
+  <div class="max-w-6xl mx-auto space-y-10">
+
+    <!-- 1-section: JavaScript nima -->
+    <section>
+      <h1 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        JavaScript — tushuntirish, kod va natija
+        <span class="bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-3 py-1 text-sm rounded-full shadow">Live</span>
+      </h1>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Chap: tushuntirish -->
+        <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+          <h2 class="text-lg font-semibold text-blue-300 mb-3">JavaScript nima?</h2>
+          <p class="text-gray-300 mb-4">
+            JavaScript — bu veb-sahifalarga <span class="font-semibold text-white">interaktivlik</span> qo‘shish uchun ishlatiladigan dasturlash tili.
+            HTML va CSS faqat tuzilma va dizayn yaratadi, JavaScript esa unga jon bag‘ishlaydi.
+          </p>
+          <h3 class="text-blue-300 font-medium mb-2">Nega ishlatiladi?</h3>
+          <ul class="list-disc pl-6 space-y-1 text-gray-300">
+            <li>Veb-sahifalarni dinamik qilish</li>
+            <li>Formalarni tekshirish</li>
+            <li>Animatsiyalar yaratish</li>
+            <li>O‘yinlar va interaktiv dasturlar tuzish</li>
+          </ul>
+        </div>
+
+        <!-- O‘ng: kod + natija -->
+        <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+          <h2 class="text-lg font-semibold text-blue-300 mb-3">Kod namuna</h2>
+
+          <!-- Kod bloki -->
+          <div class="bg-gray-900 border border-gray-700 rounded-lg p-3 mb-4">
+            <div class="flex gap-1 mb-2">
+              <span class="w-3 h-3 rounded-full bg-red-500"></span>
+              <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+              <span class="w-3 h-3 rounded-full bg-green-500"></span>
+            </div>
+<pre class="text-sm text-gray-200"><code>&lt;script&gt;
+document.getElementById("natija").innerText = "Salom, JavaScript ishladi!";
+&lt;/script&gt;</code></pre>
+          </div>
+
+          <!-- Natija -->
+          <div class="bg-gray-900 border border-dashed border-green-400 rounded-lg p-4 flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-green-400 animate-ping"></span>
+            <span id="natija" class="text-green-300">JavaScript natijasi bu yerda chiqadi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2-section: O'zgaruvchilar -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">O‘zgaruvchilar (Variables)</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+          <p class="text-gray-300 mb-4">
+            JavaScript’da ma’lumotlarni saqlash uchun <code class="text-yellow-300">var</code>, 
+            <code class="text-yellow-300">let</code> va <code class="text-yellow-300">const</code> ishlatiladi.
+          </p>
+          <ul class="list-disc pl-6 text-gray-300 space-y-1">
+            <li><code class="text-yellow-300">var</code> — eski usul, barcha joyda ishlaydi</li>
+            <li><code class="text-yellow-300">let</code> — o‘zgaradigan qiymat uchun</li>
+            <li><code class="text-yellow-300">const</code> — o‘zgarmas qiymat uchun</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+          <div class="bg-gray-900 border border-gray-700 rounded-lg p-3 mb-4">
+<pre class="text-sm text-gray-200"><code>let ism = "Sardor";
+const yosh = 20;
+document.getElementById("varNatija").innerText =
+  `Mening ismim ${ism}, yoshim ${yosh} yosh.`;
+</code></pre>
+          </div>
+          <div class="bg-gray-900 border border-dashed border-green-400 rounded-lg p-4">
+            <span id="varNatija" class="text-green-300">Natija bu yerda chiqadi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-section: Funksiya -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Funksiya</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+          <p class="text-gray-300 mb-4">
+            Funksiya — bu kodni qayta-qayta ishlatish uchun yaratilgan blok.
+          </p>
+          <p class="text-gray-300">
+            Uni <code class="text-yellow-300">function</code> kalit so‘zi bilan yaratamiz.
+          </p>
+        </div>
+        <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+          <div class="bg-gray-900 border border-gray-700 rounded-lg p-3 mb-4">
+<pre class="text-sm text-gray-200"><code>function salomBer(ism) {
+  return `Salom, ${ism}!`;
+}
+document.getElementById("funcNatija").innerText = salomBer("Sardor");
+</code></pre>
+          </div>
+          <div class="bg-gray-900 border border-dashed border-green-400 rounded-lg p-4">
+            <span id="funcNatija" class="text-green-300">Natija bu yerda chiqadi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+       <section>
+      <h2 class="text-3xl font-bold mb-6">JavaScript Funksiyalar</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Chap tushuntirish -->
+        <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+          <h3 class="text-lg font-semibold text-blue-300 mb-3">Funksiya nima?</h3>
+          <p class="text-gray-300 mb-3">
+            Funksiya — bu ma’lum vazifani bajaradigan kod bo‘lagi. Uni chaqirsak, ichidagi kod ishlaydi.
+          </p>
+          <p class="text-gray-300 mb-3">
+            Afzalliklari:
+          </p>
+          <ul class="list-disc pl-6 space-y-1 text-gray-300">
+            <li>Kodni qayta-qayta yozmaslikka yordam beradi</li>
+            <li>O‘qilishi va tushunilishi oson</li>
+            <li>Bitta joydan boshqariladi</li>
+          </ul>
+        </div>
+
+        <!-- O'ng kod + natija -->
+        <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+          <h3 class="text-lg font-semibold text-blue-300 mb-3">Kod misoli</h3>
+
+          <!-- Kod -->
+          <div class="bg-gray-900 border border-gray-700 rounded-lg p-3 mb-4">
+<pre class="text-sm text-gray-200"><code>function salomBer(ism) {
+  return "Salom, " + ism + "!";
+}
+
+document.getElementById("natija").innerText =
+  salomBer("Sardor");
+</code></pre>
+          </div>
+
+          <!-- Natija -->
+          <div class="bg-gray-900 border border-dashed border-green-400 rounded-lg p-4">
+            <span id="natija" class="text-green-300">Natija bu yerda chiqadi</span>
+          </div>
+
+          <!-- Tugma -->
+          <button onclick="document.getElementById('natija').innerText = salomBer('Jasur')"
+            class="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">
+            Jasurga salom berish
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Funksiya yaratish
+    function salomBer(ism) {
+      return "Salom, " + ism + "!";
+    }
+
+    // Dastlabki natija
+    document.getElementById("natija").innerText = salomBer("Sardor");
+  </script>
+
+
+  </div>
+
+  <script>
+    // 1-section
+    document.getElementById("natija").innerText = "Salom, JavaScript ishladi!";
+
+    // 2-section: Variables
+    let ism = "Sardor";
+    const yosh = 20;
+    document.getElementById("varNatija").innerText =
+      `Mening ismim ${ism}, yoshim ${yosh} yosh.`;
+
+    // 3-section: Function
+    function salomBer(ism) {
+      return `Salom, ${ism}!`;
+    }
+    document.getElementById("funcNatija").innerText = salomBer("Sardor");
+  </script>
+</body>
+</html>
